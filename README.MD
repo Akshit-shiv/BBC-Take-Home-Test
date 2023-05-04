@@ -9,10 +9,11 @@ Java Rest assured documentation could be found [here](https://rest-assured.io/)
 
 ### Install Java and Maven
 
-This project is tested on Java 1.8.Once the installation is done 
-- open command prompt on Windows and type below command to verify if Java and Maven installation were successful.
+This project is tested on Java 1.8. 
+- Post installation of Java and Maven, open command prompt on Windows and type below command to verify if Java and Maven installation were successful.
 
 	java -version
+	
 	mvn -v
 			
 Above commands should print out the version of java and maven being installed
