@@ -7,22 +7,20 @@ Java Rest assured documentation could be found [here](https://rest-assured.io/)
 #
 ## Setup Steps
 
-### Install Java and Maven
+### 1.Install Java and Maven
 
-This project is tested on Java 1.8. 
+- This project is tested on Java 1.8. 
 - Post installation of Java and Maven, open command prompt on Windows and type below command to verify if Java and Maven installation were successful.
 
 	java -version
 	
 	mvn -v
 			
-Above commands should print out the version of java and maven being installed
+- Above commands should print out the version of java and maven being installed
 
-### Clone the repository
-### Navigate to project root folder,right click on it,Select maven and then update the project.
-
-#
-## Run Commands
+### 2.Clone the repository
+### 3.Navigate to project root folder,right click on it,Select maven and then update the project.
+### 4.Run Tests
 There are two ways to run the test
 
 1.Run the test as cucumber feature file.
@@ -35,9 +33,11 @@ There are two ways to run the test
 ## Reporters
 We are generating HTML Test report with the help of extent-reports that is more organized and detailed than normal cucumber html report. This report is generated when the tests are run as JUnit tests.The reports could be found at:.reports\report.html
 
+#
 ## Config.json
 This file can be used to specify service request related configs like endpoint url,headers,payload and other applicable specification.
 
+#
 ## ApiTestLogfile
 This ApiTestLogFile within logs folder carries logs related to our test codes which would assist in further debugging incase of any errors.
 
