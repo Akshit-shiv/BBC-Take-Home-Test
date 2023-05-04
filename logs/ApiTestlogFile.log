@@ -1,0 +1,31 @@
+2023-05-04 04:20:21 INFO  Log - The name of the service is MediaService
+2023-05-04 04:20:23 INFO  Log - The request method is GET
+2023-05-04 04:20:23 INFO  Log - The EndPoint is https://testapi.io/api/ottplatform/media
+2023-05-04 04:20:26 INFO  Log - The status code is 200
+2023-05-04 04:20:26 INFO  Log - The response time is 2884
+2023-05-04 04:20:26 INFO  Log - Execution of scenario: Validate the response time and status code of OTT platform Media services has failed
+2023-05-04 04:20:26 INFO  Log - -------------------------------------------------------------------------------------------------------------------
+2023-05-04 04:20:26 INFO  Log - The name of the service is MediaService
+2023-05-04 04:20:26 INFO  Log - The request method is GET
+2023-05-04 04:20:26 INFO  Log - The EndPoint is https://testapi.io/api/ottplatform/media
+2023-05-04 04:20:27 INFO  Log - The status code is 200
+2023-05-04 04:20:29 INFO  Log - Execution of scenario: Validate the id field and segment type of every track in OTT platform Media services has passed
+2023-05-04 04:20:29 INFO  Log - -------------------------------------------------------------------------------------------------------------------
+2023-05-04 04:20:29 INFO  Log - The name of the service is MediaService
+2023-05-04 04:20:29 INFO  Log - The request method is GET
+2023-05-04 04:20:29 INFO  Log - The EndPoint is https://testapi.io/api/ottplatform/media
+2023-05-04 04:20:29 INFO  Log - The status code is 200
+2023-05-04 04:20:29 INFO  Log - Execution of scenario: Validate the primary field in title list of every track in OTT platform Media services has passed
+2023-05-04 04:20:29 INFO  Log - -------------------------------------------------------------------------------------------------------------------
+2023-05-04 04:20:29 INFO  Log - The name of the service is MediaService
+2023-05-04 04:20:29 INFO  Log - The request method is GET
+2023-05-04 04:20:29 INFO  Log - The EndPoint is https://testapi.io/api/ottplatform/media
+2023-05-04 04:20:30 INFO  Log - The status code is 200
+2023-05-04 04:20:30 INFO  Log - Execution of scenario: Validate that only one track has now_playing offset as true in offset has passed
+2023-05-04 04:20:30 INFO  Log - -------------------------------------------------------------------------------------------------------------------
+2023-05-04 04:20:30 INFO  Log - The name of the service is MediaService
+2023-05-04 04:20:30 INFO  Log - The request method is GET
+2023-05-04 04:20:30 INFO  Log - The EndPoint is https://testapi.io/api/ottplatform/media
+2023-05-04 04:20:30 INFO  Log - The status code is 200
+2023-05-04 04:20:30 INFO  Log - Execution of scenario: Validate the Date field in OTT platform Media services has passed
+2023-05-04 04:20:30 INFO  Log - -------------------------------------------------------------------------------------------------------------------
