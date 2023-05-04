@@ -9,12 +9,13 @@ Java Rest assured documentation could be found [here](https://rest-assured.io/)
 
 ### Install Java and Maven
 
-This project is tested on Java 1.8.Once the installation is done - open command prompt on Windows and type below command to verify if Java and Maven installation were successful.
+This project is tested on Java 1.8.Once the installation is done 
+- open command prompt on Windows and type below command to verify if Java and Maven installation were successful.
 
-			java -version
-			mvn -v
+	java -version
+	mvn -v
 			
-Above commands should print out the version of java and maven bein installed
+Above commands should print out the version of java and maven being installed
 
 ### Clone the repository
 ### Navigate to project root folder,right click on it,Select maven and then update the project.
@@ -22,6 +23,7 @@ Above commands should print out the version of java and maven bein installed
 #
 ## Run Commands
 There are two ways to run the test
+
 1.Run the test as cucumber feature file.
 - Right click on a feature file,select Run As and choose Cucumber Feature
 
