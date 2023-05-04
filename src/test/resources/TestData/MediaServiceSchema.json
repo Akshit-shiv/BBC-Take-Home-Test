@@ -1,0 +1,136 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "segment_type": {
+              "type": "string"
+            },
+            "title_list": {
+              "type": "object",
+              "properties": {
+                "primary": {
+                  "type": "string"
+                },
+                "secondary": {
+                  "type": "string"
+                },
+                "tertiary": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "primary",
+                "secondary",
+                "tertiary"
+              ]
+            },
+            "synopses": {
+              "type": "null"
+            },
+            "image_url": {
+              "type": "null"
+            },
+            "offset": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "label": {
+                  "type": "null"
+                },
+                "now_playing": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "start",
+                "end",
+                "label",
+                "now_playing"
+              ]
+            },
+            "uris": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "uri": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "id",
+                    "label",
+                    "uri"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "uri": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "id",
+                    "label",
+                    "uri"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "id",
+            "segment_type",
+            "title_list",
+            "synopses",
+            "image_url",
+            "offset",
+            "uris"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

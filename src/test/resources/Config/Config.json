@@ -1,0 +1,6 @@
+{
+	"BaseURL": "https://testapi.io",
+	"MediaService": {
+		"getEndPoint": "/api/ottplatform/media"
+	}
+}
