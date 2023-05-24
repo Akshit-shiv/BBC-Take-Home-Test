@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Log {
-
+	//The getLogger() method under Logger class is used to create a logger object that gives access to various log levels.will create logger object Using this logger object we can add a log message to log file
 	private static Logger logger = LogManager.getLogger(Log.class);
 
 	public static void endTestCase(String scenarioName, String status) {

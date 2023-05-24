@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 4, 2023 04:20:20 AM</span>
+                    <span class='label suite-start-time blue darken-3'>May 24, 2023 10:07:12 AM</span>
 				</a>
 			</li>
 			<li>
@@ -92,7 +92,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@e2e</a></li>
+					<li><a href='#'>@Test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -155,10 +155,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -170,10 +170,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='95.238%'><span class='strong'>20</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='4.762%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -190,240 +190,78 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Feature to test OTT Platform media services</span>
-						<span class='test-time'>May 4, 2023 04:20:20 AM</span>
+						<span class='test-time'>May 24, 2023 10:07:12 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='fail'>
-	<div class='category-list'>
-		<span class='category label white-text'>@e2e</span>
-	</div>
-	<span class='duration right label'>0h 0m 6s+454ms</span>
+<div class='scenariooutline node' test-id='2' status='fail'>
+	<span class='duration right label'>0h 0m 5s+784ms</span>
 	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate the response time and status code of OTT platform Media services</span>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Validate the domain name for tracks in OTT platform Media services</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Test</span>
+			</div>
 			
-			<b>Given</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Given I am using "MediaService"</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">Validate the domain name for tracks in OTT platform Media services</span>
 			
-		</li>
-		<li test-id='4' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When I send "GET" Request</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then status code is 200</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='6' class='node and fail' status='fail'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And response time is below 1000 milliseconds</span>
-				<div class='pre'><pre>java.lang.AssertionError: The response time 2884 is more than expected response time 1000 milliseconds 
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.Steps.response_time_is_below_milliseconds(Steps.java:67)
-	at ?.And response time is below 1000 milliseconds(MediaServices.feature:12)
+				<ul class='steps'>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I am using "MediaService"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I send "GET" Request</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then status code is 200</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='7' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And the domain name is "spotify" for track with label "Spotify"</span>
+							<div class='pre'><pre>java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String
+	at stepDefinition.Steps.the_domain_name_is_spotify_for_track_with_label_Spotify(Steps.java:222)
+	at ?.And the domain name is "spotify" for track with label "Spotify"(ManualTestScenarios.feature:11)
 </pre></div>
-			
+					</li>
+				</ul>
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='7' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@e2e</span>
-	</div>
-	<span class='duration right label'>0h 0m 2s+529ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate the id field and segment type of every track in OTT platform Media services</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='8' class='node given pass' status='pass'>
+		<li test-id='8' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Test</span>
+			</div>
 			
-			<b>Given</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Given I am using "MediaService"</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">Validate the domain name for tracks in OTT platform Media services</span>
 			
-		</li>
-		<li test-id='9' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When I send "GET" Request</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And status code is 200</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='11' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then the "id" field is neither empty nor null for all the items</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='12' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And the "segment_type" for all track is "music"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='13' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@e2e</span>
-	</div>
-	<span class='duration right label'>0h 0m 0s+547ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate the primary field in title list of every track in OTT platform Media services</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='14' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given I am using "MediaService"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='15' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When I send "GET" Request</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='16' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And status code is 200</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='17' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then the "primary" field in "title_list" is neither empty nor null for all the items</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='18' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@e2e</span>
-	</div>
-	<span class='duration right label'>0h 0m 0s+547ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate that only one track has now_playing offset as true in offset</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='19' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given I am using "MediaService"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='20' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When I send "GET" Request</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='21' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And status code is 200</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='22' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then only one track has now_playing offset as true</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='23' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@e2e</span>
-	</div>
-	<span class='duration right label'>0h 0m 0s+453ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Validate the Date field in OTT platform Media services</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='24' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given I am using "MediaService"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='25' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When I send "GET" Request</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='26' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And status code is 200</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='27' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And the response header has "Date" value as "Fri, 21 May"</span>
-				<div class='pre'>passed</div>
-			
+				<ul class='steps'>
+					<li test-id='9' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I am using "MediaService"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I send "GET" Request</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='11' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then status code is 200</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And the domain name is "apple" for track with label "Apple Music"</span>
+							<div class='pre'><pre>java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String
+	at stepDefinition.Steps.the_domain_name_is_spotify_for_track_with_label_Spotify(Steps.java:222)
+	at ?.And the domain name is "apple" for track with label "Apple Music"(ManualTestScenarios.feature:11)
+</pre></div>
+					</li>
+				</ul>
 		</li>
 	</ul>
 </div>
@@ -481,16 +319,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@e2e</span>
+						<span class='category-name'>@Test</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>1</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -505,29 +342,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 4, 2023 04:20:20 AM</td>
-										<td class='linked' test-id='2'>Feature to test OTT Platform media services.Validate the response time and status code of OTT platform Media services</td>
+										<td>May 24, 2023 10:07:12 AM</td>
+										<td class='linked' test-id='3'>Feature to test OTT Platform media services.Validate the domain name for tracks in OTT platform Media services.Validate the domain name for tracks in OTT platform Media services</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>May 4, 2023 04:20:26 AM</td>
-										<td class='linked' test-id='7'>Feature to test OTT Platform media services.Validate the id field and segment type of every track in OTT platform Media services</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2023 04:20:29 AM</td>
-										<td class='linked' test-id='13'>Feature to test OTT Platform media services.Validate the primary field in title list of every track in OTT platform Media services</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2023 04:20:29 AM</td>
-										<td class='linked' test-id='18'>Feature to test OTT Platform media services.Validate that only one track has now_playing offset as true in offset</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 4, 2023 04:20:30 AM</td>
-										<td class='linked' test-id='23'>Feature to test OTT Platform media services.Validate the Date field in OTT platform Media services</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>May 24, 2023 10:07:17 AM</td>
+										<td class='linked' test-id='8'>Feature to test OTT Platform media services.Validate the domain name for tracks in OTT platform Media services.Validate the domain name for tracks in OTT platform Media services</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -573,8 +395,8 @@
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-name'>java.lang.ClassCastException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -588,13 +410,19 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>May 4, 2023 04:20:26 AM</td>
-                                                        <td class='linked' test-id='6'>Feature to test OTT Platform media services.Validate the response time and status code of OTT platform Media services.And response time is below 1000 milliseconds</td>
-                                                        <td><pre><pre>java.lang.AssertionError: The response time 2884 is more than expected response time 1000 milliseconds 
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.Steps.response_time_is_below_milliseconds(Steps.java:67)
-	at ?.And response time is below 1000 milliseconds(MediaServices.feature:12)
+                                                        <td>May 24, 2023 10:07:16 AM</td>
+                                                        <td class='linked' test-id='7'>Feature to test OTT Platform media services.Validate the domain name for tracks in OTT platform Media services.Validate the domain name for tracks in OTT platform Media services.And the domain name is "spotify" for track with label "Spotify"</td>
+                                                        <td><pre><pre>java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String
+	at stepDefinition.Steps.the_domain_name_is_spotify_for_track_with_label_Spotify(Steps.java:222)
+	at ?.And the domain name is "spotify" for track with label "Spotify"(ManualTestScenarios.feature:11)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 24, 2023 10:07:18 AM</td>
+                                                        <td class='linked' test-id='12'>Feature to test OTT Platform media services.Validate the domain name for tracks in OTT platform Media services.Validate the domain name for tracks in OTT platform Media services.And the domain name is "apple" for track with label "Apple Music"</td>
+                                                        <td><pre><pre>java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String
+	at stepDefinition.Steps.the_domain_name_is_spotify_for_track_with_label_Spotify(Steps.java:222)
+	at ?.And the domain name is "apple" for track with label "Apple Music"(ManualTestScenarios.feature:11)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -627,31 +455,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 4, 2023 04:20:20 AM</div>
+					<div class='panel-lead'>May 24, 2023 10:07:12 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 4, 2023 04:20:31 AM</div>
+			 		<div class='panel-lead'>May 24, 2023 10:07:18 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>10,748ms</div>
+					<div class='panel-lead'>5,877ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -667,12 +495,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@e2e</td>
-							<td>4</td>
-							<td>1</td>
+							<td>@Test</td>
+							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									80%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -696,23 +524,23 @@
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 4,
-				failChild: 1,
+				passChild: 0,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
-				passGrandChild: 20,
-				failGrandChild: 1,
+				passGrandChild: 6,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		

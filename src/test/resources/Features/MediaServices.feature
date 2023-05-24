@@ -38,4 +38,4 @@ Feature: Feature to test OTT Platform media services
     Given I am using "MediaService"
     When I send "GET" Request
     And status code is 200
-    And the response header has "Date" value as "Fri, 21 May"
+    And the response header has "Date" value as "Tue, 23 May"

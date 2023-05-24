@@ -1,6 +1,11 @@
 {
 	"BaseURL": "https://testapi.io",
 	"MediaService": {
-		"getEndPoint": "/api/ottplatform/media"
-	}
+		"getEndPoint": "/api/RMSTest/media"
+	},
+	"CartService" : {
+	"getEndPoint": "/api/cart/sample",
+	"postEndPoint": "/abc/sample1/post"
+	}	
+
 }
